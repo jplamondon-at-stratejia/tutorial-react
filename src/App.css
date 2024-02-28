@@ -236,17 +236,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
-  background-size: cover;
+  background-size:120%;
   background-repeat: no-repeat;
 }
 .banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
+  font-weight: 7000;
+  letter-spacing: 1px;
+  padding: 7px 10px;
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-top: 100px;
   display: inline-block;
 }
 .banner h1 {
@@ -259,16 +259,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
+  line-height: 2em;
+  width: 130%;
 }
 .banner button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 0px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -284,6 +284,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  width: 225px;
+  height: 225px;
+  margin-left: 200px;
+  margin-top: 100px;
+
 }
 @keyframes updown {
     0% {
@@ -308,9 +313,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   background: #151515;
   border-radius: 64px;
-  text-align: center;
+  text-align: left;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: -100px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -324,13 +329,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
+.skill-slider .item{
+  margin: 0 10px;
+}
 .skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+  width: 20%;
+  margin: 10px 10px 0px 100px;
 }
 .background-image-left {
   top: 28%;
@@ -361,7 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 56%;
 }
 .project .nav.nav-pills {
-  width: 72%;
+  width: 50%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);

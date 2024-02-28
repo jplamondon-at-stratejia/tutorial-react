@@ -1,6 +1,6 @@
 import './App.css';
 import { NavBar } from './components/navbar';
-import { Banner } from './components/banner';
+import { Banner } from './components/banner.jsx';
 import { Skills } from './components/skills';
 import { Projects } from './components/projects';
 import { Contact } from './components/contact';
@@ -14,7 +14,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
-      <Contact />
+      {/*<Contact />*/}
       <Footer />
     </div>
   );

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headimg from "../assets/img/hero.png";
 import 'animate.css';
 import TrackVisibility from "react-on-screen";
 
@@ -10,7 +10,7 @@ export const Banner = () => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["AWS Developer", "Data Engineer"];
     const period = 2000;
 
     useEffect(() => {
@@ -51,18 +51,18 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{`Hi I'm James! `}<span className="wrap">{text}</span></h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis similique ut nemo doloremque, ea maiores minima, deserunt, nulla nihil impedit omnis. Necessitatibus nisi ratione dicta, ipsum explicabo natus et quas.</p>
+                                     <h2>{`Hi I'm Sumanth! `}<span className="wrap">{text}</span></h2>
+                                    <p>AWS Associate Developer | Cloud Developer | Azure Data Engineer| Results-Driven Software Engineer | Ex-Capgemini♠️ | Ex-Infosys</p>
                                     <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
                                 </div>
                             }
                         </TrackVisibility>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col xs={15} md={6} xl={5}>
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                                    <img src={headerImg} alt="Header Img" />
+                                    <img src={headimg} alt="Header Img" />
                                 </div>}
                         </TrackVisibility>
                     </Col>
